@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "nodemon server/server.js",
     "build": "vue-cli-service build",
     "dev": "vue-cli-service serve"
   },
@@ -10,6 +11,9 @@
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "5.9.55",
     "core-js": "^3.6.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -23,5 +27,17 @@
     "@vue/cli-service": "~4.5.0",
     "vue-cli-plugin-vuetify": "~2.4.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "## Project setup ``` yarn install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walter-S-Hong/project_vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Walter-S-Hong/project_vue/issues"
+  },
+  "homepage": "https://github.com/Walter-S-Hong/project_vue#readme"
 }
