@@ -1,4 +1,4 @@
-name: SERVER distribute
+name: main
 
 on:
   push:
