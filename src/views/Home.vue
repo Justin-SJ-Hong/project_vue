@@ -8,8 +8,8 @@
   export default {
     name: 'Home',
 
-    // components: {
-    //   HelloWorld,
-    // },
+    /*components: {
+      HelloWorld,
+    },*/
   }
 </script>
