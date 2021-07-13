@@ -15,7 +15,7 @@ jobs:
           host: ${{ secrets.REMOTE_IP }}
           username: ${{ secrets.REMOTE_SSH_ID }}
           key: ${{ secrets.REMOTE_SSH_KEY }}
-          port: "22"
+          port: 22
           script: |
             cd /home/ubuntu/project_vue
             sudo git pull
