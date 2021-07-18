@@ -8,3 +8,10 @@ const options = {
 };
 
 Vue.use(Toast, options);
+
+Vue.config.errorHandler = (e) => {
+    console.error(e);
+    if(Vue.$toast) {
+        Vue.$toast.error(e.message);
+    }
+}
