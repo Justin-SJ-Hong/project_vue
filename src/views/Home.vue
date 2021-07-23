@@ -45,12 +45,15 @@
       },
       barTest1() {
         this.$Progress.start();
+        this.$toast.info("진행 시작")
       },
       barTest2() {
         this.$Progress.finish();
+        this.$toast.success("진행 완료");
       },
       barTest3() {
         this.$Progress.fail();
+        this.$toast.error("진행 실패...");
       },
     },
   };
