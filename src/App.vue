@@ -36,6 +36,7 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
+    <vue-progress-bar></vue-progress-bar>
 
     <v-main>
       <router-view/>
