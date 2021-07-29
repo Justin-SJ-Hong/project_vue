@@ -27,6 +27,29 @@
     /*components: {
       HelloWorld,
     },*/
+    title() {
+      console.log("Home.vue title mixin");
+      return "My home";
+    },
+    serverPrefetch() {
+      console.log("Home.vue serverPrefetch");
+      return new Promise((resolve, reject) => {
+        console.log("Home.vue serverPrefetch Promise");
+        resolve();
+      });
+    },
+    beforeCreate() {
+      console.log("Home.vue beforeCreate");
+    },
+    created() {
+      console.log("Home.vue created ssrContext : ", this.$ssrContext);
+    },
+    beforeMount() {
+      console.log("Home.vue beforeMount");
+    },
+    mounted() {
+      console.log("Home.vue mounted");
+    },
     methods: {
       toastTest1() {
         this.$toast.info("Hello Info");
