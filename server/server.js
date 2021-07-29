@@ -22,7 +22,7 @@ const clientManifest = require(path.join(__dirname, "../dist/vue-ssr-client-mani
 const renderer = createBundleRenderer(serverBundle, {
     runInNewContext : false,
     template,
-    clientManifest
+    clientManifest,
 });
 
 app.get('*', (req, res) => {
