@@ -8,9 +8,10 @@ import '@babel/polyfill'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
 // 토스트 추가
+//import './plugins/vue-toast.js'
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
-//import './plugins/vue-toast.js'
+import titleMixin from './mixins/title-mixin';
 
 Vue.config.productionTip = false
 
@@ -26,6 +27,7 @@ export function createApp(ctx) {
 		vuetify,
 		render: h => h(App)
 	});
+	Vue.mixin(titleMixin);
 
 	return { app, router, store };
 }
