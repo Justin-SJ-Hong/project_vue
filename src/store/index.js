@@ -9,9 +9,9 @@ export function createStore() {
 			config: {
 				title : "projectVue",
 				footer : "projectVue all right reserved.",
-				menu : [
-					{}
-				]
+				// menu : [
+				// 	{}
+				// ]
 			}
 		},
 		mutations: {
