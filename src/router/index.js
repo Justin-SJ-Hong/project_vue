@@ -19,7 +19,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path : '*',
+    path : '*', 
     name : 'Error',
     component : () => import(/* webpackChunkName: "error" */ '../views/Error.vue')
   },
