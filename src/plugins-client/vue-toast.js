@@ -15,3 +15,5 @@ Vue.config.errorHandler = (e) => {
         Vue.$toast.error(e.message);
     }
 }
+
+Vue.use(Toast, options);
