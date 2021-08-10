@@ -29,6 +29,26 @@ export default {
   components: { SiteTitle, SiteFooter, SiteNavi, SiteUser},
   name: "App",
 
+  beforeCreate() {
+		console.log('App.vue beforeCreate');
+	},
+	created() {
+		console.log('App.vue created', this.$ssrContext);
+	},
+	beforeMount() {
+		console.log('App.vue beforeMount');
+	},
+	mounted() {
+		console.log('App.vue mounted');
+	},
+	serverPrefetch() {
+		console.log('App.vue serverPrefetch');
+		return new Promise((resolve, reject)=> {
+			console.log('App.vue serverPrefetch Promise');
+			resolve();
+		})
+	},
+
   data() {
     return {
       drawer : false,
