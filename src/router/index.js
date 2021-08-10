@@ -21,8 +21,8 @@ const routes = [
   {
     path : '*',
     name : 'Error',
-    component : () => import('../views/Error.vue')
-  }
+    component : () => import(/* webpackChunkName: "error" */ '../views/Error.vue')
+  },
 ]
 
 export function createRouter() {
